@@ -650,11 +650,12 @@ body.dark-mode .copyright { border-top: 1px solid rgba(255,255,255,0.05); }
 
 /* Responsive */
 @media (max-width: 992px) {
-    .modal-body { flex-direction: column; }
+    .modal-content { overflow-y: auto; max-height: 90vh; }
+    .modal-body { flex-direction: column; max-height: none; }
     .modal-img-container, .modal-info { width: 100%; }
-    .modal-img-container { height: 350px; flex-shrink: 0; }
-    .modal-info { overflow-y: visible; padding: 30px; }
-    .modal-actions { flex-direction: column; }
+    .modal-img-container { height: 300px; flex-shrink: 0; }
+    .modal-info { padding: 30px; overflow-y: visible; }
+    .modal-actions { flex-direction: column; margin-top: 20px; }
 }
 @media (max-width: 768px) {
     .hero h1 { font-size: 3rem; }
